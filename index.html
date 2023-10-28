@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+		
+	</style>
+</head>
+
+<body>
+	<h1>Survey Form</h1>
+	<form id="form">
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name:
+			</label>
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email:
+			</label>
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age:
+			</label>
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+		<div class="form-control">
+			<label>
+				Gender:
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Male</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Female</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Other</input>
+			</label>
+		</div>
+        <div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">Professional</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>Mark the languages and frameworks you want to learn about:
+			</label>
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">C</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">C++</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">C#</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Java</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">JavaScript</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Python</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">React</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Angular</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Django</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Mongo DB</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Write something about yourself
+			</label>
+			<textarea name="message" rows="4" id="comment"
+				placeholder="Write here">
+			</textarea>
+		</div>
+		<button id="myButton" type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+	<script>
+		    var myButton = document.getElementById('myButton');
+            myButton.addEventListener('click', function() {
+			alert('Form Submitted!');
+           });
+	</script>
+</body>
+</html>
